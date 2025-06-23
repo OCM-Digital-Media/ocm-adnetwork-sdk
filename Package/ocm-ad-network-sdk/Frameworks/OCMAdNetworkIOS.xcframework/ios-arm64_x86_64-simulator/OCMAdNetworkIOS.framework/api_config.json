@@ -1,0 +1,20 @@
+{
+  "adUnits": [
+    {
+      "id": "1001-sreq-test-300x250-imp-1",
+      "format": "banner",
+      "size": "300x250",
+      "position": "bottom",
+      "refresh": 30
+    }
+  ],
+  "gam": {
+    "networkCode": "75351959",
+    "adUnitPath": "/75351959/testadunit/test_app_320x50"
+  },
+  "privacy": {
+    "gdpr": 1,
+    "ccpa": "1---",
+    "coppa": 0
+  }
+}
