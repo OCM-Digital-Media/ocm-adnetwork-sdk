@@ -12,32 +12,24 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers final public class OcmAdNetworkSDK {
-  public static func initialize(publisherId: Swift.String) async throws
-  public static func initialize(with config: OCMAdNetworkIOS.OcmRemoteConfig) async throws
-  public static func config() -> OCMAdNetworkIOS.OcmRemoteConfig
+@objc public class OcmInterstitialLoader : ObjectiveC.NSObject {
+  weak public var delegate: (any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?
+  public init(prebidConfigAdId: Swift.String, gamAdUnitId: Swift.String)
+  public func setFetchTimeout(ms: Swift.Int)
+  public func setAutoRefreshInterval(ms: Swift.Int)
+  public func loadAd()
+  public func isAdReady() -> Swift.Bool
+  public func showAd(from viewController: UIKit.UIViewController)
+  public func destroy()
   @objc deinit
 }
-public protocol OcmBannerViewDelegate : AnyObject {
-  func onAdLoaded()
-  func onAdFailed(_ error: any Swift.Error)
-  func onAdClicked()
-  func onImpression()
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class OcmBannerView : UIKit.UIView, OCMAdNetworkIOS.OcmBannerViewDelegate {
-  @_Concurrency.MainActor @preconcurrency public func onAdLoaded()
-  @_Concurrency.MainActor @preconcurrency public func onAdFailed(_ error: any Swift.Error)
-  @_Concurrency.MainActor @preconcurrency public func onAdClicked()
-  @_Concurrency.MainActor @preconcurrency public func onImpression()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency public func load(adUnitId: Swift.String, delegate: (any OCMAdNetworkIOS.OcmBannerViewDelegate)?)
-  @objc deinit
-}
-extension OCMAdNetworkIOS.OcmBannerView : GoogleMobileAds.BannerViewDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.BannerView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerView(_ bannerView: GoogleMobileAds.BannerView, didFailToReceiveAdWithError error: any Swift.Error)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.BannerView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.BannerView)
+extension OCMAdNetworkIOS.OcmInterstitialLoader : GoogleMobileAds.FullScreenContentDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordImpression(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
 }
 final public class OcmConfigBuilder {
   public init()
@@ -50,11 +42,50 @@ final public class OcmConfigBuilder {
   final public func build() -> OCMAdNetworkIOS.OcmRemoteConfig
   @objc deinit
 }
-public struct OcmRemoteConfig : Swift.Decodable {
-  public let adUnits: [OCMAdNetworkIOS.AdUnit]
-  public let gam: OCMAdNetworkIOS.GAMConfig
-  public let privacy: OCMAdNetworkIOS.PrivacyConfig
-  public init(from decoder: any Swift.Decoder) throws
+public protocol OcmRewardedLoaderDelegate : AnyObject {
+  func rewardedLoaderDidLoadAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
+  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didFailToLoadAdWithCode code: Swift.Int, message: Swift.String)
+  func rewardedLoaderDidPresentAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
+  func rewardedLoaderDidDismissAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
+  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didFailToPresentAdWithCode code: Swift.Int, message: Swift.String)
+  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didEarnReward result: OCMAdNetworkIOS.RewardedResult)
+}
+public struct RewardedResult {
+  public let adUnitId: Swift.String
+  public let rewardType: Swift.String
+  public let rewardAmount: Swift.Int
+  public let shownAtMillis: Swift.Int64
+}
+public class OcmRewardedLoader {
+  weak public var delegate: (any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?
+  public init(adUnitId: Swift.String)
+  public func load()
+  public func show(from viewController: UIKit.UIViewController)
+  public func applyServerSideVerification(userId: Swift.String, customData: Swift.String? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class OcmAdNetworkSDK {
+  public static func initialize(publisherId: Swift.String) async throws
+  public static func initialize(with config: OCMAdNetworkIOS.OcmRemoteConfig) async throws
+  public static func config() -> OCMAdNetworkIOS.OcmRemoteConfig
+  @objc deinit
+}
+public protocol OcmBannerViewDelegate : AnyObject {
+  func onAdLoaded()
+  func onAdFailed(_ error: any Swift.Error)
+  func onAdClicked()
+  func onImpression()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class OcmBannerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public func load(adUnitId: Swift.String, delegate: (any OCMAdNetworkIOS.OcmBannerViewDelegate)?)
+  @objc deinit
+}
+extension OCMAdNetworkIOS.OcmBannerView : GoogleMobileAds.BannerViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerView(_ bannerView: GoogleMobileAds.BannerView, didFailToReceiveAdWithError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.BannerView)
 }
 public struct AdUnit : Swift.Decodable {
   public let id: Swift.String
@@ -73,5 +104,18 @@ public struct PrivacyConfig : Swift.Decodable {
   public let gdpr: Swift.Int
   public let ccpa: Swift.String
   public let coppa: Swift.Int
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol OcmInterstitialLoaderDelegate : AnyObject {
+  func onInterstitialLoaded()
+  func onInterstitialFailedToLoad(reason: Swift.String)
+  func onInterstitialShown()
+  func onInterstitialClicked()
+  func onInterstitialClosed()
+}
+public struct OcmRemoteConfig : Swift.Decodable {
+  public let adUnits: [OCMAdNetworkIOS.AdUnit]
+  public let gam: OCMAdNetworkIOS.GAMConfig
+  public let privacy: OCMAdNetworkIOS.PrivacyConfig
   public init(from decoder: any Swift.Decoder) throws
 }

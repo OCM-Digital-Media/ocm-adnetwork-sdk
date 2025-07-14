@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/PrebidMobile.framework/PrebidMobile</key>
 		<data>
-		iIj0tlYXwTtriNIpLph37jLCwfU=
+		WpFB7J5SiTkBfsj0NcxWUKCPKnw=
 		</data>
 		<key>Frameworks/PrebidMobile.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		4Mtc8Vw3TE0TT/EoWZpPH07b43Y=
+		gBQI4640GoL/xzxkiV3DG3nxGuQ=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		XVvG/T+ZvCSF5Pqbbd7GTsvjBWo=
+		+vWOHYIEkAr2YvzeqOsYMztZuQE=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XVvG/T+ZvCSF5Pqbbd7GTsvjBWo=
+		+vWOHYIEkAr2YvzeqOsYMztZuQE=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		dRyutFg18M8uPIC7F90IgviWaNo=
+		31mu4cBcAREUf0acushFTtalZQU=
 		</data>
 		<key>api_config.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0L6p1+Sx6CDwVHRqf9UAZs0I0yMZAcHufztuWTqFcP4=
+			SpmSeToruy8vQXl30ItvDmQ5Tm11bS77hB6ECnErJv8=
 			</data>
 		</dict>
 		<key>Frameworks/PrebidMobile.framework/_CodeSignature/CodeResources</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WHCC2G9KQKRZICGM7FPDwfABXaZPj1vRG6ixcbp7GgA=
+			yiRcVPYIMrRZMTac/+gJ+T5oYYPKpcb8pKnxIiodo5g=
 			</data>
 		</dict>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Pdq5t4wAeKekfw2VTQK+hf2WCKkEZI6bMqefrgdr9I=
+			bX6HoSs48XkG7k6bsfSaPI2K6qhdjYphy1ZYxORk2eE=
 			</data>
 		</dict>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Pdq5t4wAeKekfw2VTQK+hf2WCKkEZI6bMqefrgdr9I=
+			bX6HoSs48XkG7k6bsfSaPI2K6qhdjYphy1ZYxORk2eE=
 			</data>
 		</dict>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U5tZOV9Oab+NGIbU5E4/NyJgJRVL1Hf/78wtFGQY+NI=
+			Omb/jYpnSnbtjo6jYm3mcIwwQ9uVm+Fyx0tTitUSTP0=
 			</data>
 		</dict>
 		<key>api_config.json</key>
