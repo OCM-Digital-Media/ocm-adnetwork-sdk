@@ -14,7 +14,7 @@ This package provides a lightweight, XCFramework-based integration of:
 ## 📋 Requirements
 
 - iOS 12.0+
-- Swift 5.0+
+- Swift 5.3+
 - Architectures: `arm64`, `x86_64` (simulator supported via `.xcframework`)
 
 ---
@@ -25,7 +25,7 @@ To add this package to your project:
 
 1. Open Xcode → **File** → **Add Packages**
 2. Use this URL:https://github.com/OCM-Digital-Media/ocm-adnetwork-sdk.git
-3. Choose the desired version (e.g. `1.0.5`)
+3. Choose the desired version (e.g. `1.0.6`)
 4. Add `OCMAdNetworkIOS` to your target dependencies
 
 ---
