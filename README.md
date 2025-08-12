@@ -25,7 +25,7 @@ To add this package to your project:
 
 1. Open Xcode → **File** → **Add Packages**
 2. Use this URL:https://github.com/OCM-Digital-Media/ocm-adnetwork-sdk.git
-3. Choose the desired version (e.g. `1.0.6`)
+3. Choose the desired version (e.g. `1.0.7`)
 4. Add `OCMAdNetworkIOS` to your target dependencies
 
 ---

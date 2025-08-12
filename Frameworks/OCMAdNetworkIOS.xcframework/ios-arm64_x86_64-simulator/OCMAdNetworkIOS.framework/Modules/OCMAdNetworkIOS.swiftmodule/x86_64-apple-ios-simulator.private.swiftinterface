@@ -3,72 +3,30 @@
 // swift-module-flags: -target x86_64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OCMAdNetworkIOS
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import CryptoKit
+import DeveloperToolsSupport
 import Foundation
 import GoogleMobileAds
 import PrebidMobile
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public class OcmInterstitialLoader : ObjectiveC.NSObject {
-  weak public var delegate: (any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?
-  public init(prebidConfigAdId: Swift.String, gamAdUnitId: Swift.String)
-  public func setFetchTimeout(ms: Swift.Int)
-  public func setAutoRefreshInterval(ms: Swift.Int)
-  public func loadAd()
-  public func isAdReady() -> Swift.Bool
-  public func showAd(from viewController: UIKit.UIViewController)
-  public func destroy()
-  @objc deinit
+@objc public protocol OcmNativeAdLoaderDelegate {
+  @objc func nativeAdDidLoad(_ ad: GoogleMobileAds.NativeAd, into view: UIKit.UIView)
+  @objc func customNativeAdDidLoad(_ ad: GoogleMobileAds.CustomNativeAd, into view: UIKit.UIView)
+  @objc func nativeAdFailedToLoad(error: Swift.String)
 }
-extension OCMAdNetworkIOS.OcmInterstitialLoader : GoogleMobileAds.FullScreenContentDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordImpression(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
-}
-final public class OcmConfigBuilder {
-  public init()
-  @discardableResult
-  final public func adUnit(id: Swift.String, format: Swift.String, size: Swift.String, position: Swift.String = "bottom", refresh: Swift.Int = 30) -> Self
-  @discardableResult
-  final public func gam(networkCode: Swift.String, adUnitPath: Swift.String) -> Self
-  @discardableResult
-  final public func privacyFromSdk(gdpr: Swift.Int, ccpa: Swift.String, coppa: Swift.Int) -> Self
-  final public func build() -> OCMAdNetworkIOS.OcmRemoteConfig
-  @objc deinit
-}
-public protocol OcmRewardedLoaderDelegate : AnyObject {
-  func rewardedLoaderDidLoadAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
-  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didFailToLoadAdWithCode code: Swift.Int, message: Swift.String)
-  func rewardedLoaderDidPresentAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
-  func rewardedLoaderDidDismissAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
-  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didFailToPresentAdWithCode code: Swift.Int, message: Swift.String)
-  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didEarnReward result: OCMAdNetworkIOS.RewardedResult)
-}
-public struct RewardedResult {
-  public let adUnitId: Swift.String
-  public let rewardType: Swift.String
-  public let rewardAmount: Swift.Int
-  public let shownAtMillis: Swift.Int64
-}
-public class OcmRewardedLoader {
-  weak public var delegate: (any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?
-  public init(adUnitId: Swift.String)
+@objc public class OcmNativeAdLoader : ObjectiveC.NSObject {
+  public init(gamAdUnitId: Swift.String, rootViewController: UIKit.UIViewController, containerView: UIKit.UIView, delegate: any OCMAdNetworkIOS.OcmNativeAdLoaderDelegate)
   public func load()
-  public func show(from viewController: UIKit.UIViewController)
-  public func applyServerSideVerification(userId: Swift.String, customData: Swift.String? = nil)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class OcmAdNetworkSDK {
-  public static func initialize(publisherId: Swift.String) async throws
-  public static func initialize(with config: OCMAdNetworkIOS.OcmRemoteConfig) async throws
-  public static func config() -> OCMAdNetworkIOS.OcmRemoteConfig
-  @objc deinit
+extension OCMAdNetworkIOS.OcmNativeAdLoader : GoogleMobileAds.NativeAdLoaderDelegate {
+  @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive nativeAd: GoogleMobileAds.NativeAd)
+  @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didFailToReceiveAdWithError error: any Swift.Error)
 }
 public protocol OcmBannerViewDelegate : AnyObject {
   func onAdLoaded()
@@ -106,6 +64,37 @@ public struct PrivacyConfig : Swift.Decodable {
   public let coppa: Swift.Int
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct OcmRemoteConfig : Swift.Decodable {
+  public let adUnits: [OCMAdNetworkIOS.AdUnit]
+  public let gam: OCMAdNetworkIOS.GAMConfig
+  public let privacy: OCMAdNetworkIOS.PrivacyConfig
+  public init(from decoder: any Swift.Decoder) throws
+}
+final public class OcmConfigBuilder {
+  public init()
+  @discardableResult
+  final public func adUnit(id: Swift.String, format: Swift.String, size: Swift.String, position: Swift.String = "bottom", refresh: Swift.Int = 30) -> Self
+  @discardableResult
+  final public func gam(networkCode: Swift.String, adUnitPath: Swift.String) -> Self
+  @discardableResult
+  final public func privacyFromSdk(gdpr: Swift.Int, ccpa: Swift.String, coppa: Swift.Int) -> Self
+  final public func build() -> OCMAdNetworkIOS.OcmRemoteConfig
+  @objc deinit
+}
+public protocol OcmRewardedLoaderDelegate : AnyObject {
+  func rewardedLoaderDidLoadAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
+  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didFailToLoadAdWithCode code: Swift.Int, message: Swift.String)
+  func rewardedLoaderDidPresentAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
+  func rewardedLoaderDidDismissAd(_ loader: OCMAdNetworkIOS.OcmRewardedLoader)
+  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didFailToPresentAdWithCode code: Swift.Int, message: Swift.String)
+  func rewardedLoader(_ loader: OCMAdNetworkIOS.OcmRewardedLoader, didEarnReward result: OCMAdNetworkIOS.RewardedResult)
+}
+public struct RewardedResult {
+  public let adUnitId: Swift.String
+  public let rewardType: Swift.String
+  public let rewardAmount: Swift.Int
+  public let shownAtMillis: Swift.Int64
+}
 public protocol OcmInterstitialLoaderDelegate : AnyObject {
   func onInterstitialLoaded()
   func onInterstitialFailedToLoad(reason: Swift.String)
@@ -113,9 +102,36 @@ public protocol OcmInterstitialLoaderDelegate : AnyObject {
   func onInterstitialClicked()
   func onInterstitialClosed()
 }
-public struct OcmRemoteConfig : Swift.Decodable {
-  public let adUnits: [OCMAdNetworkIOS.AdUnit]
-  public let gam: OCMAdNetworkIOS.GAMConfig
-  public let privacy: OCMAdNetworkIOS.PrivacyConfig
-  public init(from decoder: any Swift.Decoder) throws
+public class OcmRewardedLoader {
+  weak public var delegate: (any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?
+  public init(adUnitId: Swift.String)
+  public func load()
+  public func show(from viewController: UIKit.UIViewController)
+  public func applyServerSideVerification(userId: Swift.String, customData: Swift.String? = nil)
+  @objc deinit
+}
+@objc public class OcmInterstitialLoader : ObjectiveC.NSObject {
+  weak public var delegate: (any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?
+  public init(prebidConfigAdId: Swift.String, gamAdUnitId: Swift.String)
+  public func setFetchTimeout(ms: Swift.Int)
+  public func setAutoRefreshInterval(ms: Swift.Int)
+  public func loadAd()
+  public func isAdReady() -> Swift.Bool
+  public func showAd(from viewController: UIKit.UIViewController)
+  public func destroy()
+  @objc deinit
+}
+extension OCMAdNetworkIOS.OcmInterstitialLoader : GoogleMobileAds.FullScreenContentDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordImpression(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+}
+@_hasMissingDesignatedInitializers final public class OcmAdNetworkSDK {
+  public static func initialize(publisherId: Swift.String) async throws
+  public static func initialize(with config: OCMAdNetworkIOS.OcmRemoteConfig) async throws
+  public static func config() -> OCMAdNetworkIOS.OcmRemoteConfig
+  @objc deinit
 }
