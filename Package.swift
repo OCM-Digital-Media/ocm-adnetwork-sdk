@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OCMAdNetworkIOS",
-            url: "https://cdn.orangeclickmedia.com/sdk/1.1.0/OCMAdNetworkIOS.xcframework.zip",
+            url: "https://cdn.orangeclickmedia.com/sdk/1.1.1/OCMAdNetworkIOS.xcframework.zip",
             checksum: "6f64ae645dd3345597936e66a16f2bcb10d808d16d989ae846aa2aff8a855a21"
         ),
         .binaryTarget(
