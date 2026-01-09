@@ -16,462 +16,12 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OcmNativeAdLoaderDelegate",
-        "printedName": "OcmNativeAdLoaderDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "nativeAdDidLoad",
-            "printedName": "nativeAdDidLoad(_:into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NativeAd",
-                "printedName": "GoogleMobileAds.NativeAd",
-                "usr": "c:objc(cs)GADNativeAd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate(im)nativeAdDidLoad:into:",
-            "mangledName": "$s15OCMAdNetworkIOS25OcmNativeAdLoaderDelegateP06nativeF7DidLoad_4intoySo09GADNativeF0C_So6UIViewCtF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "customNativeAdDidLoad",
-            "printedName": "customNativeAdDidLoad(_:into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CustomNativeAd",
-                "printedName": "GoogleMobileAds.CustomNativeAd",
-                "usr": "c:objc(cs)GADCustomNativeAd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate(im)customNativeAdDidLoad:into:",
-            "mangledName": "$s15OCMAdNetworkIOS25OcmNativeAdLoaderDelegateP06customeF7DidLoad_4intoySo09GADCustomeF0C_So6UIViewCtF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "nativeAdFailedToLoad",
-            "printedName": "nativeAdFailedToLoad(error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate(im)nativeAdFailedToLoadWithError:",
-            "mangledName": "$s15OCMAdNetworkIOS25OcmNativeAdLoaderDelegateP06nativeF12FailedToLoad5errorySS_tF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate",
-        "mangledName": "$s15OCMAdNetworkIOS25OcmNativeAdLoaderDelegateP",
-        "moduleName": "OCMAdNetworkIOS",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "PrebidMobile",
-        "printedName": "PrebidMobile",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "OCMAdNetworkIOS"
       },
       {
-        "kind": "TypeDecl",
-        "name": "OcmNativeAdLoader",
-        "printedName": "OcmNativeAdLoader",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(gamAdUnitId:rootViewController:containerView:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OcmNativeAdLoader",
-                "printedName": "OCMAdNetworkIOS.OcmNativeAdLoader",
-                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "OcmNativeAdLoaderDelegate",
-                "printedName": "any OCMAdNetworkIOS.OcmNativeAdLoaderDelegate",
-                "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15OCMAdNetworkIOS17OcmNativeAdLoaderC03gamF6UnitId18rootViewController09containerL08delegateACSS_So06UIViewM0CSo0P0CAA0defG8Delegate_ptcfc",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC03gamF6UnitId18rootViewController09containerL08delegateACSS_So06UIViewM0CSo0P0CAA0defG8Delegate_ptcfc",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "load",
-            "printedName": "load()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS17OcmNativeAdLoaderC4loadyyF",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC4loadyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OcmNativeAdLoader",
-                "printedName": "OCMAdNetworkIOS.OcmNativeAdLoader",
-                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader(im)init",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderCACycfc",
-            "moduleName": "OCMAdNetworkIOS",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "adLoader",
-            "printedName": "adLoader(_:didReceive:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdLoader",
-                "printedName": "GoogleMobileAds.AdLoader",
-                "usr": "c:objc(cs)GADAdLoader"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NativeAd",
-                "printedName": "GoogleMobileAds.NativeAd",
-                "usr": "c:objc(cs)GADNativeAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader(im)adLoader:didReceiveNativeAd:",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC02adG0_10didReceiveySo05GADAdG0C_So09GADNativeF0CtF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "adLoader:didReceiveNativeAd:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "adLoader",
-            "printedName": "adLoader(_:didFailToReceiveAdWithError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdLoader",
-                "printedName": "GoogleMobileAds.AdLoader",
-                "usr": "c:objc(cs)GADAdLoader"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader(im)adLoader:didFailToReceiveAdWithError:",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC02adG0_016didFailToReceiveF9WithErrorySo05GADAdG0C_s0N0_ptF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "adLoader:didFailToReceiveAdWithError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader",
-        "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -482,136 +32,11 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "OcmBannerViewDelegate",
-        "printedName": "OcmBannerViewDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onAdLoaded",
-            "printedName": "onAdLoaded()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdLoadedyyF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdLoadedyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdFailed",
-            "printedName": "onAdFailed(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdFailedyys5Error_pF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdFailedyys5Error_pF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdClicked",
-            "printedName": "onAdClicked()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP11onAdClickedyyF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP11onAdClickedyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onImpression",
-            "printedName": "onImpression()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP12onImpressionyyF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP12onImpressionyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP",
-        "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP",
-        "moduleName": "OCMAdNetworkIOS",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
         "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "OCMAdNetworkIOS"
       },
       {
         "kind": "Import",
@@ -979,6 +404,128 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "OcmBannerViewDelegate",
+        "printedName": "OcmBannerViewDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onAdLoaded",
+            "printedName": "onAdLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdLoadedyyF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdLoadedyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdFailed",
+            "printedName": "onAdFailed(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdFailedyys5Error_pF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP10onAdFailedyys5Error_pF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdClicked",
+            "printedName": "onAdClicked()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP11onAdClickedyyF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP11onAdClickedyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onImpression",
+            "printedName": "onImpression()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP12onImpressionyyF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP12onImpressionyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmBannerViewDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15OCMAdNetworkIOS21OcmBannerViewDelegateP",
+        "mangledName": "$s15OCMAdNetworkIOS21OcmBannerViewDelegateP",
+        "moduleName": "OCMAdNetworkIOS",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1007,53 +554,6 @@
       },
       {
         "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1078,6 +578,596 @@
       },
       {
         "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OcmInterstitialLoader",
+        "printedName": "OcmInterstitialLoader",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvp",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvp",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OcmInterstitialLoaderDelegate",
+                        "printedName": "any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate",
+                        "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvg",
+                "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvg",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OcmInterstitialLoaderDelegate",
+                        "printedName": "any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate",
+                        "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvs",
+                "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvs",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvM",
+                "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvM",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(prebidConfigAdId:gamAdUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OcmInterstitialLoader",
+                "printedName": "OCMAdNetworkIOS.OcmInterstitialLoader",
+                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC16prebidConfigAdId03gami4UnitJ0ACSS_SStcfc",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC16prebidConfigAdId03gami4UnitJ0ACSS_SStcfc",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setFetchTimeout",
+            "printedName": "setFetchTimeout(ms:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC15setFetchTimeout2msySi_tF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC15setFetchTimeout2msySi_tF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAutoRefreshInterval",
+            "printedName": "setAutoRefreshInterval(ms:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC22setAutoRefreshInterval2msySi_tF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC22setAutoRefreshInterval2msySi_tF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC6loadAdyyF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC6loadAdyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAdReady",
+            "printedName": "isAdReady()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC9isAdReadySbyF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC9isAdReadySbyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC6showAd4fromySo16UIViewControllerC_tF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC6showAd4fromySo16UIViewControllerC_tF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC7destroyyyF",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC7destroyyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OcmInterstitialLoader",
+                "printedName": "OCMAdNetworkIOS.OcmInterstitialLoader",
+                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)init",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderCACycfc",
+            "moduleName": "OCMAdNetworkIOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillPresentFullScreenContent",
+            "printedName": "adWillPresentFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adWillPresentFullScreenContent:",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC30adWillPresentFullScreenContentyySo07GADFullK12PresentingAd_pF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "adWillPresentFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidRecordImpression",
+            "printedName": "adDidRecordImpression(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adDidRecordImpression:",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC21adDidRecordImpressionyySo25GADFullScreenPresentingAd_pF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "adDidRecordImpression:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidRecordClick",
+            "printedName": "adDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adDidRecordClick:",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC16adDidRecordClickyySo25GADFullScreenPresentingAd_pF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "adDidRecordClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adWillDismissFullScreenContent",
+            "printedName": "adWillDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adWillDismissFullScreenContent:",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC30adWillDismissFullScreenContentyySo07GADFullK12PresentingAd_pF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "adWillDismissFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adDidDismissFullScreenContent",
+            "printedName": "adDidDismissFullScreenContent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adDidDismissFullScreenContent:",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC29adDidDismissFullScreenContentyySo07GADFullK12PresentingAd_pF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "adDidDismissFullScreenContent:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ad",
+            "printedName": "ad(_:didFailToPresentFullScreenContentWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
+                "usr": "c:objc(pl)GADFullScreenPresentingAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)ad:didFailToPresentFullScreenContentWithError:",
+            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC2ad_42didFailToPresentFullScreenContentWithErrorySo07GADFullM12PresentingAd_p_s0P0_ptF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "ad:didFailToPresentFullScreenContentWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader",
+        "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1087,11 +1177,147 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "CryptoKit",
-        "printedName": "CryptoKit",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
+        "kind": "TypeDecl",
+        "name": "OcmInterstitialLoaderDelegate",
+        "printedName": "OcmInterstitialLoaderDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onInterstitialLoaded",
+            "printedName": "onInterstitialLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6LoadedyyF",
+            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6LoadedyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialFailedToLoad",
+            "printedName": "onInterstitialFailedToLoad(reason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE12FailedToLoad6reasonySS_tF",
+            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE12FailedToLoad6reasonySS_tF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialShown",
+            "printedName": "onInterstitialShown()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE5ShownyyF",
+            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE5ShownyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialClicked",
+            "printedName": "onInterstitialClicked()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE7ClickedyyF",
+            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE7ClickedyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onInterstitialClosed",
+            "printedName": "onInterstitialClosed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6ClosedyyF",
+            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6ClosedyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP",
+        "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP",
+        "moduleName": "OCMAdNetworkIOS",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1743,214 +1969,13 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "OcmRemoteConfig",
-        "printedName": "OcmRemoteConfig",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "adUnits",
-            "printedName": "adUnits",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[OCMAdNetworkIOS.AdUnit]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdUnit",
-                    "printedName": "OCMAdNetworkIOS.AdUnit",
-                    "usr": "s:15OCMAdNetworkIOS6AdUnitV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvp",
-            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvp",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[OCMAdNetworkIOS.AdUnit]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdUnit",
-                        "printedName": "OCMAdNetworkIOS.AdUnit",
-                        "usr": "s:15OCMAdNetworkIOS6AdUnitV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvg",
-                "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvg",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "gam",
-            "printedName": "gam",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GAMConfig",
-                "printedName": "OCMAdNetworkIOS.GAMConfig",
-                "usr": "s:15OCMAdNetworkIOS9GAMConfigV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvp",
-            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvp",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GAMConfig",
-                    "printedName": "OCMAdNetworkIOS.GAMConfig",
-                    "usr": "s:15OCMAdNetworkIOS9GAMConfigV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvg",
-                "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvg",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "privacy",
-            "printedName": "privacy",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PrivacyConfig",
-                "printedName": "OCMAdNetworkIOS.PrivacyConfig",
-                "usr": "s:15OCMAdNetworkIOS13PrivacyConfigV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvp",
-            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvp",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PrivacyConfig",
-                    "printedName": "OCMAdNetworkIOS.PrivacyConfig",
-                    "usr": "s:15OCMAdNetworkIOS13PrivacyConfigV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvg",
-                "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvg",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OcmRemoteConfig",
-                "printedName": "OCMAdNetworkIOS.OcmRemoteConfig",
-                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "OCMAdNetworkIOS",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV",
-        "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV",
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "OCMAdNetworkIOS",
         "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          }
+          "RawDocComment"
         ]
       },
       {
@@ -1965,10 +1990,33 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2193,18 +2241,285 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
+        "kind": "TypeDecl",
+        "name": "OcmRemoteConfig",
+        "printedName": "OcmRemoteConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adUnits",
+            "printedName": "adUnits",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OCMAdNetworkIOS.AdUnit]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdUnit",
+                    "printedName": "OCMAdNetworkIOS.AdUnit",
+                    "usr": "s:15OCMAdNetworkIOS6AdUnitV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvp",
+            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvp",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OCMAdNetworkIOS.AdUnit]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdUnit",
+                        "printedName": "OCMAdNetworkIOS.AdUnit",
+                        "usr": "s:15OCMAdNetworkIOS6AdUnitV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvg",
+                "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7adUnitsSayAA6AdUnitVGvg",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gam",
+            "printedName": "gam",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GAMConfig",
+                "printedName": "OCMAdNetworkIOS.GAMConfig",
+                "usr": "s:15OCMAdNetworkIOS9GAMConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvp",
+            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvp",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GAMConfig",
+                    "printedName": "OCMAdNetworkIOS.GAMConfig",
+                    "usr": "s:15OCMAdNetworkIOS9GAMConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvg",
+                "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV3gamAA9GAMConfigVvg",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "privacy",
+            "printedName": "privacy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacyConfig",
+                "printedName": "OCMAdNetworkIOS.PrivacyConfig",
+                "usr": "s:15OCMAdNetworkIOS13PrivacyConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvp",
+            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvp",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PrivacyConfig",
+                    "printedName": "OCMAdNetworkIOS.PrivacyConfig",
+                    "usr": "s:15OCMAdNetworkIOS13PrivacyConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvg",
+                "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV7privacyAA07PrivacyF0Vvg",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OcmRemoteConfig",
+                "printedName": "OCMAdNetworkIOS.OcmRemoteConfig",
+                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OCMAdNetworkIOS",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV",
+        "mangledName": "$s15OCMAdNetworkIOS15OcmRemoteConfigV",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
       },
       {
         "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2239,6 +2554,1132 @@
         "printedName": "GoogleMobileAds",
         "declKind": "Import",
         "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OcmNativeAdLoader",
+        "printedName": "OcmNativeAdLoader",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(gamAdUnitId:rootViewController:containerView:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OcmNativeAdLoader",
+                "printedName": "OCMAdNetworkIOS.OcmNativeAdLoader",
+                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OcmNativeAdLoaderDelegate",
+                "printedName": "any OCMAdNetworkIOS.OcmNativeAdLoaderDelegate",
+                "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15OCMAdNetworkIOS17OcmNativeAdLoaderC03gamF6UnitId18rootViewController09containerL08delegateACSS_So06UIViewM0CSo0P0CAA0defG8Delegate_ptcfc",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC03gamF6UnitId18rootViewController09containerL08delegateACSS_So06UIViewM0CSo0P0CAA0defG8Delegate_ptcfc",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS17OcmNativeAdLoaderC4loadyyF",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC4loadyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OcmNativeAdLoader",
+                "printedName": "OCMAdNetworkIOS.OcmNativeAdLoader",
+                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader(im)init",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderCACycfc",
+            "moduleName": "OCMAdNetworkIOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader(im)adLoader:didReceiveNativeAd:",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC02adG0_10didReceiveySo05GADAdG0C_So09GADNativeF0CtF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "adLoader:didReceiveNativeAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader(im)adLoader:didFailToReceiveAdWithError:",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC02adG0_016didFailToReceiveF9WithErrorySo05GADAdG0C_s0N0_ptF",
+            "moduleName": "OCMAdNetworkIOS",
+            "objc_name": "adLoader:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmNativeAdLoader",
+        "mangledName": "$s15OCMAdNetworkIOS17OcmNativeAdLoaderC",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OcmNativeAdLoaderDelegate",
+        "printedName": "OcmNativeAdLoaderDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onNativeAdLoaded",
+            "printedName": "onNativeAdLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate(im)onNativeAdLoaded",
+            "mangledName": "$s15OCMAdNetworkIOS25OcmNativeAdLoaderDelegateP02oneF6LoadedyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNativeAdFailed",
+            "printedName": "onNativeAdFailed(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate(im)onNativeAdFailed:",
+            "mangledName": "$s15OCMAdNetworkIOS25OcmNativeAdLoaderDelegateP02oneF6Failedyys5Error_pF",
+            "moduleName": "OCMAdNetworkIOS",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmNativeAdLoaderDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@OCMAdNetworkIOS@objc(pl)OcmNativeAdLoaderDelegate",
+        "mangledName": "$s15OCMAdNetworkIOS25OcmNativeAdLoaderDelegateP",
+        "moduleName": "OCMAdNetworkIOS",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OutbrainSDK",
+        "printedName": "OutbrainSDK",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OutbrainBannerResult",
+        "printedName": "OutbrainBannerResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15OCMAdNetworkIOS20OutbrainBannerResultV4viewSo6UIViewCvp",
+            "mangledName": "$s15OCMAdNetworkIOS20OutbrainBannerResultV4viewSo6UIViewCvp",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS20OutbrainBannerResultV4viewSo6UIViewCvg",
+                "mangledName": "$s15OCMAdNetworkIOS20OutbrainBannerResultV4viewSo6UIViewCvg",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15OCMAdNetworkIOS20OutbrainBannerResultV",
+        "mangledName": "$s15OCMAdNetworkIOS20OutbrainBannerResultV",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OutbrainBannerLoader",
+        "printedName": "OutbrainBannerLoader",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(widgetId:sourceUrl:appKey:containerView:listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OutbrainBannerResult",
+                "printedName": "OCMAdNetworkIOS.OutbrainBannerResult",
+                "usr": "s:15OCMAdNetworkIOS20OutbrainBannerResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any OCMAdNetworkIOS.BannerListener)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerListener",
+                    "printedName": "any OCMAdNetworkIOS.BannerListener",
+                    "usr": "s:15OCMAdNetworkIOS14BannerListenerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS20OutbrainBannerLoaderC4load8widgetId9sourceUrl6appKey13containerView8listenerAA0dE6ResultVSS_SSSgALSo6UIViewCAA0E8Listener_pSgtYaKFZ",
+            "mangledName": "$s15OCMAdNetworkIOS20OutbrainBannerLoaderC4load8widgetId9sourceUrl6appKey13containerView8listenerAA0dE6ResultVSS_SSSgALSo6UIViewCAA0E8Listener_pSgtYaKFZ",
+            "moduleName": "OCMAdNetworkIOS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OutbrainBannerLoader",
+                "printedName": "OCMAdNetworkIOS.OutbrainBannerLoader",
+                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OutbrainBannerLoader"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OutbrainBannerLoader(im)init",
+            "mangledName": "$s15OCMAdNetworkIOS20OutbrainBannerLoaderCACycfc",
+            "moduleName": "OCMAdNetworkIOS",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OutbrainBannerLoader",
+        "mangledName": "$s15OCMAdNetworkIOS20OutbrainBannerLoaderC",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OcmAdNetworkSDK",
+        "printedName": "OcmAdNetworkSDK",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(publisherId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC10initialize11publisherIdySS_tYaKFZ",
+            "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC10initialize11publisherIdySS_tYaKFZ",
+            "moduleName": "OCMAdNetworkIOS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OcmRemoteConfig",
+                "printedName": "OCMAdNetworkIOS.OcmRemoteConfig",
+                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC10initialize4withyAA0D12RemoteConfigV_tYaKFZ",
+            "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC10initialize4withyAA0D12RemoteConfigV_tYaKFZ",
+            "moduleName": "OCMAdNetworkIOS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "config",
+            "printedName": "config()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OcmRemoteConfig",
+                "printedName": "OCMAdNetworkIOS.OcmRemoteConfig",
+                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC6configAA0D12RemoteConfigVyFZ",
+            "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC6configAA0D12RemoteConfigVyFZ",
+            "moduleName": "OCMAdNetworkIOS",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC",
+        "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OcmRewardedLoader",
+        "printedName": "OcmRewardedLoader",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvp",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvp",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OcmRewardedLoaderDelegate",
+                        "printedName": "any OCMAdNetworkIOS.OcmRewardedLoaderDelegate",
+                        "usr": "s:15OCMAdNetworkIOS25OcmRewardedLoaderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvg",
+                "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvg",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OcmRewardedLoaderDelegate",
+                        "printedName": "any OCMAdNetworkIOS.OcmRewardedLoaderDelegate",
+                        "usr": "s:15OCMAdNetworkIOS25OcmRewardedLoaderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvs",
+                "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvs",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvM",
+                "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvM",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OcmRewardedLoader",
+                "printedName": "OCMAdNetworkIOS.OcmRewardedLoader",
+                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8adUnitIdACSS_tcfc",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8adUnitIdACSS_tcfc",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC4loadyyF",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC4loadyyF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC4show4fromySo16UIViewControllerC_tF",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC4show4fromySo16UIViewControllerC_tF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applyServerSideVerification",
+            "printedName": "applyServerSideVerification(userId:customData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC27applyServerSideVerification6userId10customDataySS_SSSgtF",
+            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC27applyServerSideVerification6userId10customDataySS_SSSgtF",
+            "moduleName": "OCMAdNetworkIOS",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC",
+        "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2682,8 +4123,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "OCMAdNetworkIOS",
         "declAttributes": [
@@ -2691,14 +4132,21 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "TeadsSDK",
+        "printedName": "TeadsSDK",
+        "declKind": "Import",
+        "moduleName": "OCMAdNetworkIOS"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "OcmInterstitialLoaderDelegate",
-        "printedName": "OcmInterstitialLoaderDelegate",
+        "name": "BannerListener",
+        "printedName": "BannerListener",
         "children": [
           {
             "kind": "Function",
-            "name": "onInterstitialLoaded",
-            "printedName": "onInterstitialLoaded()",
+            "name": "onAdLoaded",
+            "printedName": "onAdLoaded()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2707,19 +4155,19 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6LoadedyyF",
-            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6LoadedyyF",
+            "usr": "s:15OCMAdNetworkIOS14BannerListenerP10onAdLoadedyyF",
+            "mangledName": "$s15OCMAdNetworkIOS14BannerListenerP10onAdLoadedyyF",
             "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.BannerListener>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.BannerListener>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "onInterstitialFailedToLoad",
-            "printedName": "onInterstitialFailedToLoad(reason:)",
+            "name": "onAdFailed",
+            "printedName": "onAdFailed(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2728,25 +4176,25 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE12FailedToLoad6reasonySS_tF",
-            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE12FailedToLoad6reasonySS_tF",
+            "usr": "s:15OCMAdNetworkIOS14BannerListenerP10onAdFailedyys5Error_pF",
+            "mangledName": "$s15OCMAdNetworkIOS14BannerListenerP10onAdFailedyys5Error_pF",
             "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.BannerListener>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.BannerListener>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "onInterstitialShown",
-            "printedName": "onInterstitialShown()",
+            "name": "onImpression",
+            "printedName": "onImpression()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2755,19 +4203,19 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE5ShownyyF",
-            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE5ShownyyF",
+            "usr": "s:15OCMAdNetworkIOS14BannerListenerP12onImpressionyyF",
+            "mangledName": "$s15OCMAdNetworkIOS14BannerListenerP12onImpressionyyF",
             "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.BannerListener>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.BannerListener>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "onInterstitialClicked",
-            "printedName": "onInterstitialClicked()",
+            "name": "onAdClicked",
+            "printedName": "onAdClicked()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2776,40 +4224,19 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE7ClickedyyF",
-            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE7ClickedyyF",
+            "usr": "s:15OCMAdNetworkIOS14BannerListenerP11onAdClickedyyF",
+            "mangledName": "$s15OCMAdNetworkIOS14BannerListenerP11onAdClickedyyF",
             "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onInterstitialClosed",
-            "printedName": "onInterstitialClosed()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6ClosedyyF",
-            "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP02onE6ClosedyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.OcmInterstitialLoaderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : OCMAdNetworkIOS.BannerListener>",
+            "sugared_genericSig": "<Self where Self : OCMAdNetworkIOS.BannerListener>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP",
-        "mangledName": "$s15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP",
+        "usr": "s:15OCMAdNetworkIOS14BannerListenerP",
+        "mangledName": "$s15OCMAdNetworkIOS14BannerListenerP",
         "moduleName": "OCMAdNetworkIOS",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -2834,59 +4261,31 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
         "kind": "TypeDecl",
-        "name": "OcmRewardedLoader",
-        "printedName": "OcmRewardedLoader",
+        "name": "TeadsBannerResult",
+        "printedName": "TeadsBannerResult",
         "children": [
           {
             "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
+            "name": "view",
+            "printedName": "view",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?"
+                "name": "TeadsInReadAdView",
+                "printedName": "TeadsSDK.TeadsInReadAdView",
+                "usr": "c:@M@TeadsSDK@objc(cs)TeadsInReadAdView"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvp",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvp",
+            "usr": "s:15OCMAdNetworkIOS17TeadsBannerResultV4view0D3SDK0D12InReadAdViewCvp",
+            "mangledName": "$s15OCMAdNetworkIOS17TeadsBannerResultV4view0D3SDK0D12InReadAdViewCvp",
             "moduleName": "OCMAdNetworkIOS",
             "declAttributes": [
-              "HasInitialValue",
               "HasStorage",
-              "ReferenceOwnership",
               "AccessControl"
             ],
-            "ownership": 1,
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -2896,160 +4295,104 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OcmRewardedLoaderDelegate",
-                        "printedName": "any OCMAdNetworkIOS.OcmRewardedLoaderDelegate",
-                        "usr": "s:15OCMAdNetworkIOS25OcmRewardedLoaderDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "TeadsInReadAdView",
+                    "printedName": "TeadsSDK.TeadsInReadAdView",
+                    "usr": "c:@M@TeadsSDK@objc(cs)TeadsInReadAdView"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvg",
-                "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvg",
+                "usr": "s:15OCMAdNetworkIOS17TeadsBannerResultV4view0D3SDK0D12InReadAdViewCvg",
+                "mangledName": "$s15OCMAdNetworkIOS17TeadsBannerResultV4view0D3SDK0D12InReadAdViewCvg",
                 "moduleName": "OCMAdNetworkIOS",
                 "implicit": true,
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any OCMAdNetworkIOS.OcmRewardedLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OcmRewardedLoaderDelegate",
-                        "printedName": "any OCMAdNetworkIOS.OcmRewardedLoaderDelegate",
-                        "usr": "s:15OCMAdNetworkIOS25OcmRewardedLoaderDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvs",
-                "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvs",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvM",
-                "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8delegateAA0deF8Delegate_pSgvM",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(adUnitId:)",
+            "kind": "Var",
+            "name": "placement",
+            "printedName": "placement",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "OcmRewardedLoader",
-                "printedName": "OCMAdNetworkIOS.OcmRewardedLoader",
-                "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "TeadsInReadAdPlacement",
+                "printedName": "any TeadsSDK.TeadsInReadAdPlacement",
+                "usr": "c:@M@TeadsSDK@objc(pl)TeadsInReadAdPlacement"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC8adUnitIdACSS_tcfc",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC8adUnitIdACSS_tcfc",
+            "declKind": "Var",
+            "usr": "s:15OCMAdNetworkIOS17TeadsBannerResultV9placement0D3SDK0D17InReadAdPlacement_pvp",
+            "mangledName": "$s15OCMAdNetworkIOS17TeadsBannerResultV9placement0D3SDK0D17InReadAdPlacement_pvp",
             "moduleName": "OCMAdNetworkIOS",
             "declAttributes": [
+              "HasStorage",
               "AccessControl"
             ],
-            "init_kind": "Designated"
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TeadsInReadAdPlacement",
+                    "printedName": "any TeadsSDK.TeadsInReadAdPlacement",
+                    "usr": "c:@M@TeadsSDK@objc(pl)TeadsInReadAdPlacement"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15OCMAdNetworkIOS17TeadsBannerResultV9placement0D3SDK0D17InReadAdPlacement_pvg",
+                "mangledName": "$s15OCMAdNetworkIOS17TeadsBannerResultV9placement0D3SDK0D17InReadAdPlacement_pvg",
+                "moduleName": "OCMAdNetworkIOS",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15OCMAdNetworkIOS17TeadsBannerResultV",
+        "mangledName": "$s15OCMAdNetworkIOS17TeadsBannerResultV",
+        "moduleName": "OCMAdNetworkIOS",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TeadsBannerLoader",
+        "printedName": "TeadsBannerLoader",
+        "children": [
           {
             "kind": "Function",
             "name": "load",
-            "printedName": "load()",
+            "printedName": "load(placementId:articleUrl:containerView:listener:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC4loadyyF",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC4loadyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "show",
-            "printedName": "show(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC4show4fromySo16UIViewControllerC_tF",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC4show4fromySo16UIViewControllerC_tF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "applyServerSideVerification",
-            "printedName": "applyServerSideVerification(userId:customData:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "TeadsBannerResult",
+                "printedName": "OCMAdNetworkIOS.TeadsBannerResult",
+                "usr": "s:15OCMAdNetworkIOS17TeadsBannerResultV"
               },
               {
                 "kind": "TypeNominal",
@@ -3069,747 +4412,32 @@
                     "usr": "s:SS"
                   }
                 ],
-                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any OCMAdNetworkIOS.BannerListener)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerListener",
+                    "printedName": "any OCMAdNetworkIOS.BannerListener",
+                    "usr": "s:15OCMAdNetworkIOS14BannerListenerP"
+                  }
+                ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC27applyServerSideVerification6userId10customDataySS_SSSgtF",
-            "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC27applyServerSideVerification6userId10customDataySS_SSSgtF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:15OCMAdNetworkIOS17OcmRewardedLoaderC",
-        "mangledName": "$s15OCMAdNetworkIOS17OcmRewardedLoaderC",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "PrebidMobile",
-        "printedName": "PrebidMobile",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OcmInterstitialLoader",
-        "printedName": "OcmInterstitialLoader",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvp",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvp",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl"
-            ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OcmInterstitialLoaderDelegate",
-                        "printedName": "any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate",
-                        "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvg",
-                "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvg",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "OcmInterstitialLoaderDelegate",
-                        "printedName": "any OCMAdNetworkIOS.OcmInterstitialLoaderDelegate",
-                        "usr": "s:15OCMAdNetworkIOS29OcmInterstitialLoaderDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvs",
-                "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvs",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvM",
-                "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC8delegateAA0deF8Delegate_pSgvM",
-                "moduleName": "OCMAdNetworkIOS",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(prebidConfigAdId:gamAdUnitId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OcmInterstitialLoader",
-                "printedName": "OCMAdNetworkIOS.OcmInterstitialLoader",
-                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC16prebidConfigAdId03gami4UnitJ0ACSS_SStcfc",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC16prebidConfigAdId03gami4UnitJ0ACSS_SStcfc",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "setFetchTimeout",
-            "printedName": "setFetchTimeout(ms:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC15setFetchTimeout2msySi_tF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC15setFetchTimeout2msySi_tF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setAutoRefreshInterval",
-            "printedName": "setAutoRefreshInterval(ms:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC22setAutoRefreshInterval2msySi_tF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC22setAutoRefreshInterval2msySi_tF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "loadAd",
-            "printedName": "loadAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC6loadAdyyF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC6loadAdyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isAdReady",
-            "printedName": "isAdReady()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC9isAdReadySbyF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC9isAdReadySbyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showAd",
-            "printedName": "showAd(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC6showAd4fromySo16UIViewControllerC_tF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC6showAd4fromySo16UIViewControllerC_tF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "destroy",
-            "printedName": "destroy()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS21OcmInterstitialLoaderC7destroyyyF",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC7destroyyyF",
-            "moduleName": "OCMAdNetworkIOS",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OcmInterstitialLoader",
-                "printedName": "OCMAdNetworkIOS.OcmInterstitialLoader",
-                "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)init",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderCACycfc",
-            "moduleName": "OCMAdNetworkIOS",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "adWillPresentFullScreenContent",
-            "printedName": "adWillPresentFullScreenContent(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
-                "usr": "c:objc(pl)GADFullScreenPresentingAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adWillPresentFullScreenContent:",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC30adWillPresentFullScreenContentyySo07GADFullK12PresentingAd_pF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "adWillPresentFullScreenContent:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "adDidRecordImpression",
-            "printedName": "adDidRecordImpression(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
-                "usr": "c:objc(pl)GADFullScreenPresentingAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adDidRecordImpression:",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC21adDidRecordImpressionyySo25GADFullScreenPresentingAd_pF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "adDidRecordImpression:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "adDidRecordClick",
-            "printedName": "adDidRecordClick(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
-                "usr": "c:objc(pl)GADFullScreenPresentingAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adDidRecordClick:",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC16adDidRecordClickyySo25GADFullScreenPresentingAd_pF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "adDidRecordClick:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "adWillDismissFullScreenContent",
-            "printedName": "adWillDismissFullScreenContent(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
-                "usr": "c:objc(pl)GADFullScreenPresentingAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adWillDismissFullScreenContent:",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC30adWillDismissFullScreenContentyySo07GADFullK12PresentingAd_pF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "adWillDismissFullScreenContent:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "adDidDismissFullScreenContent",
-            "printedName": "adDidDismissFullScreenContent(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
-                "usr": "c:objc(pl)GADFullScreenPresentingAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)adDidDismissFullScreenContent:",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC29adDidDismissFullScreenContentyySo07GADFullK12PresentingAd_pF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "adDidDismissFullScreenContent:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "ad",
-            "printedName": "ad(_:didFailToPresentFullScreenContentWithError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "FullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
-                "usr": "c:objc(pl)GADFullScreenPresentingAd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader(im)ad:didFailToPresentFullScreenContentWithError:",
-            "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC2ad_42didFailToPresentFullScreenContentWithErrorySo07GADFullM12PresentingAd_p_s0P0_ptF",
-            "moduleName": "OCMAdNetworkIOS",
-            "objc_name": "ad:didFailToPresentFullScreenContentWithError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@OCMAdNetworkIOS@objc(cs)OcmInterstitialLoader",
-        "mangledName": "$s15OCMAdNetworkIOS21OcmInterstitialLoaderC",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "PrebidMobile",
-        "printedName": "PrebidMobile",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OcmAdNetworkSDK",
-        "printedName": "OcmAdNetworkSDK",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize(publisherId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC10initialize11publisherIdySS_tYaKFZ",
-            "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC10initialize11publisherIdySS_tYaKFZ",
-            "moduleName": "OCMAdNetworkIOS",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "initialize",
-            "printedName": "initialize(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "OcmRemoteConfig",
-                "printedName": "OCMAdNetworkIOS.OcmRemoteConfig",
-                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC10initialize4withyAA0D12RemoteConfigV_tYaKFZ",
-            "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC10initialize4withyAA0D12RemoteConfigV_tYaKFZ",
+            "usr": "s:15OCMAdNetworkIOS17TeadsBannerLoaderC4load11placementId10articleUrl13containerView8listenerAA0dE6ResultVSS_SSSgSo6UIViewCAA0E8Listener_pSgtYaKFZ",
+            "mangledName": "$s15OCMAdNetworkIOS17TeadsBannerLoaderC4load11placementId10articleUrl13containerView8listenerAA0dE6ResultVSS_SSSgSo6UIViewCAA0E8Listener_pSgtYaKFZ",
             "moduleName": "OCMAdNetworkIOS",
             "static": true,
             "declAttributes": [
@@ -3818,37 +4446,13 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "config",
-            "printedName": "config()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OcmRemoteConfig",
-                "printedName": "OCMAdNetworkIOS.OcmRemoteConfig",
-                "usr": "s:15OCMAdNetworkIOS15OcmRemoteConfigV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC6configAA0D12RemoteConfigVyFZ",
-            "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC6configAA0D12RemoteConfigVyFZ",
-            "moduleName": "OCMAdNetworkIOS",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:15OCMAdNetworkIOS05OcmAdB3SDKC",
-        "mangledName": "$s15OCMAdNetworkIOS05OcmAdB3SDKC",
+        "usr": "s:15OCMAdNetworkIOS17TeadsBannerLoaderC",
+        "mangledName": "$s15OCMAdNetworkIOS17TeadsBannerLoaderC",
         "moduleName": "OCMAdNetworkIOS",
         "declAttributes": [
-          "Final",
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
@@ -3867,33 +4471,6 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "OCMAdNetworkIOS",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -3929,39 +4506,32 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Helper\/SessionManager.swift",
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 230,
-      "length": 21,
-      "value": "\"ocm_init_session_id\""
+      "offset": 6847,
+      "length": 14,
+      "value": "\"📤 Payload\""
     },
     {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsHostBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 517,
       "length": 8,
-      "value": "\"tablet\""
+      "value": "\"888888\""
     },
     {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 508,
-      "length": 8,
-      "value": "\"mobile\""
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsHostBuilder.swift",
       "kind": "IntegerLiteral",
-      "offset": 5829,
-      "length": 3,
-      "value": "320"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5842,
+      "offset": 553,
       "length": 2,
-      "value": "50"
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsHostBuilder.swift",
+      "kind": "Array",
+      "offset": 3038,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/OCMAnalytics.swift",
@@ -3992,32 +4562,81 @@
       "value": "\"https:\/\/windrunner.orangeclickmedia.com\/\""
     },
     {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsHostBuilder.swift",
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 517,
+      "offset": 497,
       "length": 8,
-      "value": "\"888888\""
+      "value": "\"tablet\""
     },
     {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsHostBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 553,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsHostBuilder.swift",
-      "kind": "Array",
-      "offset": 3038,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Analytics\/AnalyticsBuilder.swift",
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6847,
-      "length": 14,
-      "value": "\"📤 Payload\""
+      "offset": 508,
+      "length": 8,
+      "value": "\"mobile\""
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5829,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Banner\/OCMBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5842,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Helper\/SessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 21,
+      "value": "\"ocm_init_session_id\""
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Helper\/ViewabilityTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 250,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Helper\/ViewabilityTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 327,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Interstitial\/OcmInterstitialLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 4,
+      "value": "4000"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Interstitial\/OcmInterstitialLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 588,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Interstitial\/OcmInterstitialLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 707,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/ConfigService.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
+      "length": 28,
+      "value": "\"https:\/\/config.ocm.com\/sdk\""
     },
     {
       "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/OcmConfigBuilder.swift",
@@ -4076,6 +4695,20 @@
       "value": "30"
     },
     {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/ServerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 12,
+      "value": "\"pba-stream\""
+    },
+    {
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/ServerConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 12,
+      "value": "\"pba-update\""
+    },
+    {
       "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/UTMTagData.swift",
       "kind": "StringLiteral",
       "offset": 344,
@@ -4111,39 +4744,11 @@
       "value": "\"utm_content\""
     },
     {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Interstitial\/OcmInterstitialLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 529,
-      "length": 4,
-      "value": "4000"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Interstitial\/OcmInterstitialLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 588,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Interstitial\/OcmInterstitialLoader.swift",
-      "kind": "BooleanLiteral",
-      "offset": 707,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/ServerConfig.swift",
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Outbrain\/OutbrainBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 284,
-      "length": 12,
-      "value": "\"pba-stream\""
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/ServerConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 322,
-      "length": 12,
-      "value": "\"pba-update\""
+      "offset": 304,
+      "length": 57,
+      "value": "\"https:\/\/mobile-demo.outbrain.com\/2013\/12\/15\/test-page-2\""
     },
     {
       "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Public\/OcmAdNetworkSDK.swift",
@@ -4174,25 +4779,11 @@
       "value": "100000"
     },
     {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Helper\/ViewabilityTracker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 250,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Helper\/ViewabilityTracker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 327,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Model\/ConfigService.swift",
+      "filePath": "\/Users\/predragjevtic\/ocm-ios-sdk\/OCMAdNetworkIOS\/OCMAdNetworkIOS\/Teads\/TeadsBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 270,
-      "length": 28,
-      "value": "\"https:\/\/config.ocm.com\/sdk\""
+      "offset": 494,
+      "length": 35,
+      "value": "\"https:\/\/mobile-demo.outbrain.com\/\""
     },
     {
       "filePath": "\/Users\/predragjevtic\/Library\/Developer\/Xcode\/DerivedData\/OCMAdNetworkIOS-cgyntbjauaidmugcrlzfmbynjfbo\/Build\/Intermediates.noindex\/ArchiveIntermediates\/OCMAdNetworkIOS\/IntermediateBuildFilesPath\/OCMAdNetworkIOS.build\/Release-iphonesimulator\/OCMAdNetworkIOS.build\/DerivedSources\/GeneratedAssetSymbols.swift",

@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OCMAdNetworkIOS",
-            url: "https://cdn.orangeclickmedia.com/sdk/1.1.1/OCMAdNetworkIOS.xcframework.zip",
-            checksum: "6f64ae645dd3345597936e66a16f2bcb10d808d16d989ae846aa2aff8a855a21"
+            url: "https://cdn.orangeclickmedia.com/sdk/1.1.2/OCMAdNetworkIOS.xcframework.zip",
+            checksum: "95600ffd3a1ed4fcc18ee522ce7ba4c851eeb4434ee9a626fa425a07e923d3e3"
         ),
         .binaryTarget(
             name: "PrebidMobile",
@@ -31,13 +31,32 @@ let package = Package(
             url: "https://cdn.orangeclickmedia.com/sdk/1.0.6/UserMessagingPlatform.xcframework.zip",
             checksum: "b94c0188bb2af6fa8b4cf7933728d5c6b4ba117d697632f3d0ce0d0ab14c4b93"
         ),
+        .binaryTarget(
+            name: "OutbrainSDK",
+            url: "https://cdn.orangeclickmedia.com/sdk/1.1.2/OutbrainSDK.xcframework.zip",
+            checksum: "51fa3218df9c0c9d41353fcd36e5556cf99c2d6d07cdeaedb16cce6e94e46de4"
+        ),
+        .binaryTarget(
+            name: "TeadsSDK",
+            url: "https://cdn.orangeclickmedia.com/sdk/1.1.2/TeadsSDK.xcframework.zip",
+            checksum: "67f7469e061b7a3b6cd4d7a88ef1efa8e4cc3fd657218021fb35cef1da8a932a"
+        ),
+        .binaryTarget(
+            name: "OMSDK_Teadstv",
+            url: "https://cdn.orangeclickmedia.com/sdk/1.1.2/OMSDK_Teadstv.xcframework.zip",
+            checksum: "8f2658914576eb36bc3c9dfbb6b6423bcd57e9441949eb4182eef2a532ab9b43"
+        ),
         .target(
             name: "ocm-ad-network-sdk-wrapper",
             dependencies: [
                 "OCMAdNetworkIOS",
                 "PrebidMobile",
                 "GoogleMobileAds",
-                "UserMessagingPlatform"
+                "UserMessagingPlatform",
+                "OutbrainSDK",
+                "TeadsSDK",
+                "OMSDK_Teadstv"
+                
             ],
             path: "Sources/ocm-ad-network-sdk-wrapper"
         )

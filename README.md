@@ -8,6 +8,8 @@ This package provides a lightweight, XCFramework-based integration of:
 - ✅ PrebidMobile
 - ✅ GoogleMobileAds
 - ✅ UserMessagingPlatform
+- ✅ TeadsSDK
+- ✅ OutbrainSDK
 
 ---
 
@@ -25,7 +27,7 @@ To add this package to your project:
 
 1. Open Xcode → **File** → **Add Packages**
 2. Use this URL:https://github.com/OCM-Digital-Media/ocm-adnetwork-sdk.git
-3. Choose the desired version (e.g. `1.1.1`)
+3. Choose the desired version (e.g. `1.1.2`)
 4. Add `OCMAdNetworkIOS` to your target dependencies
 
 ---

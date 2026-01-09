@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		9Cyoxnw+i6ithfbM5TBNpcudzz8=
+		vRHCxeMS4p3/vkaS9ZmQS1Bs8tI=
 		</data>
 		<key>Frameworks/PrebidMobile.framework/Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/PrebidMobile.framework/PrebidMobile</key>
 		<data>
-		cR+NfYm8hGffLHQwBAHq0tyyTkw=
+		nTaSprF0TNleAnL+hvhgBppMYuk=
 		</data>
 		<key>Frameworks/PrebidMobile.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,43 +22,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+OPcV67ojgyNRiaoUfQZaEy+dh4=
+		4DnQjJsgvqZy6tRRsIv/iP9n6HY=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		KxwgeriBLDTXiEMdtejlyE4eaSo=
+		h2zOUNfxCBB/5tamULFLC8luVcQ=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nqhpW7Jm9VB3ocXXVjygyZYR50c=
+		KR4mGKNxQlgHhStgdJIvUtPDQ6k=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		BrQ/mmzEP/oYI9eUfYKZHjBjW+Q=
+		vD/FO01aPlvc1JdN9aMAiXfrenU=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		nqhpW7Jm9VB3ocXXVjygyZYR50c=
+		KR4mGKNxQlgHhStgdJIvUtPDQ6k=
 		</data>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CTb1NuwBQeUzZAxdWPzZev8FwIg=
+		soNh6E4Tdz0iFzO4nkfcDuWYqAg=
 		</data>
 		<key>NativeAd_1.nib</key>
 		<data>
-		wV6SPcljCR6hOwxNNISwJrUch2Y=
+		I+nHeSGWD+9gJPshUKYW7pYw4RI=
 		</data>
 		<key>NativeAd_2.nib</key>
 		<data>
-		l4zIO0wC+7mBNVcCsb8uZOzw7/Q=
+		tWjsFCjjipzeT87WT+wNz7yWMnA=
 		</data>
 		<key>NativeAd_3.nib</key>
 		<data>
-		+scBKRM/6kNQAxKLj+dW7mfTVCA=
+		FXgTTUbTJKopmfUNOyEQk5wnY04=
 		</data>
 		<key>NativeAd_4.nib</key>
 		<data>
-		u9vuM7HBXplNZyIDgOD0EX0VJXo=
+		RNFN+iYRsByxl2zqExd2ZbFv0Ag=
 		</data>
 		<key>api_config.json</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMr8ZTef9bUETGdzGKeG4HzHUZS6phWNdsnmI7Ql3H4=
+			bFuOX0J9eGzZzrrDnyjpr/tVHtVToCyIfNIA+0tmOGc=
 			</data>
 		</dict>
 		<key>Frameworks/PrebidMobile.framework/Info.plist</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kENj6OXgmQHZPYsG5pl03amlxrXotspv8ZJ/ZzQHAQU=
+			Bo7W8HTBxpHWq0kh21uYcm1ZMMipnSWsxqA62ccH0R8=
 			</data>
 		</dict>
 		<key>Frameworks/PrebidMobile.framework/_CodeSignature/CodeResources</key>
@@ -99,63 +99,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i61GS6TtaN3ZoDSOb2rkr+yKjhecSSOjcyuu0ZtO5tc=
+			auedFGmLCgLD4hlp5MNAlgt841loLAYAgsG/dccyZyo=
 			</data>
 		</dict>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KyC2NrZ/wTYbHhJKUwFGV/XhL3wY1btvvL3emqLaOHo=
+			dV4IElfgEO6HyK8W5Bioi2e6jacnl6xb8uSi+OmIqUo=
 			</data>
 		</dict>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JZHVN84ty7T4P2/Tgpk0rA5fFE5cp1ZFnACVzm6H65s=
+			zkXhTPD6AcEuuIYAA76vDtBGH/LD4rmtBU/3rwaJ/+M=
 			</data>
 		</dict>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KyC2NrZ/wTYbHhJKUwFGV/XhL3wY1btvvL3emqLaOHo=
+			dV4IElfgEO6HyK8W5Bioi2e6jacnl6xb8uSi+OmIqUo=
 			</data>
 		</dict>
 		<key>Modules/OCMAdNetworkIOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4C8BiwCtYdyiHoomQc5KI8gtK6jhiW++6OJUYoiWjoI=
+			oY9Q7DrKGCd1/n5t1d5BPN+67vaxVqHxIZOB2pXaBlM=
 			</data>
 		</dict>
 		<key>NativeAd_1.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tchTChe48As9vQVgizMBaC8uo7PeCTC8BPoKnJKpNJE=
+			SIjMZgL0WE1a+2scb7ewNaTjxLTv6wtBRsRjag1hV0Y=
 			</data>
 		</dict>
 		<key>NativeAd_2.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1H4AE6QGe0PVuIxK5A8EsMKU9T14oQZDR5r6ye4kih4=
+			swR0plsFj/KvROyPFCvN8oAsrrP6yYkouMzFhI1yI8M=
 			</data>
 		</dict>
 		<key>NativeAd_3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sozqVQ8wTs060QOmT+1BaIw2bN0iwYwMzhXRkKfpcxY=
+			HFnqpJCQRi/JEx8WFtZVmi274YXmUVixV7GruZEo2Ww=
 			</data>
 		</dict>
 		<key>NativeAd_4.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sa81xtGGbCSGIzIEorVR5kBxxuiz4j4LLaA4TTm0MDg=
+			8vMmjLMz+FuBGYy6jItfj3aqxf0uI9Gs2J4xFEmqsE0=
 			</data>
 		</dict>
 		<key>api_config.json</key>
