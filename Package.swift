@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OCMAdNetworkIOS",
-            url: "https://cdn.orangeclickmedia.com/sdk/1.1.3/OCMAdNetworkIOS.xcframework.zip",
-            checksum: "5847ad9174a7dcc45e2337a2bab2e39d0a99a5eb2ab4631d66bd2c6466440d8d"
+            url: "https://cdn.orangeclickmedia.com/sdk/1.1.4/OCMAdNetworkIOS.xcframework.zip",
+            checksum: "a1a01c9f6963295d33e5ed5c6d86af9d229d02de639d4190660d3d082f08b442"
         ),
         .binaryTarget(
             name: "PrebidMobile",
